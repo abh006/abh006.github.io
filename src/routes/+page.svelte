@@ -1,10 +1,16 @@
 <script lang="ts">
-	import Thought from '$lib/Thought.svelte';
+	import ThoughtItem from '$lib/Components/ThoughtItem.svelte';
+	import { getThoughts } from '$lib/db';
 </script>
 
-<div class="flex flex-col mt-10">
-	<Thought title="Hello" message="How you doin How you doin How you doin " createdOn={new Date()} />
+<div class="flex flex-col">
+	{#await getThoughts()}
+		<p>Loading thoughts...</p>
+	{:then thoughts}
+		{#each thoughts as { title, message, createdOn, id }}
+			<ThoughtItem {title} {message} {createdOn} {id} />
+		{/each}
+	{:catch}
+		<p>Error loading thoughts</p>
+	{/await}
 </div>
-
-<style>
-</style>

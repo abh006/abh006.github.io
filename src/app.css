@@ -4,9 +4,22 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	/* display: flex; */
-	/* height: 100vh; */
-	/* margin: 0; */
-	/* justify-content: center; */
-	/* align-items: center; */
+}
+
+h1 {
+	@apply text-xl font-bold mt-4;
+}
+
+h2 {
+	@apply text-lg font-semibold mt-4;
+}
+h3 {
+	@apply font-semibold mt-4;
+}
+code {
+	@apply bg-slate-200 px-1 py-1 rounded-md;
+}
+
+pre {
+	@apply bg-slate-200 px-2 py-3 rounded-md block my-2 overflow-scroll;
 }
