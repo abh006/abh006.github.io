@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Thought from '$lib/Thought.svelte';
+</script>
+
+<div class="flex flex-col mt-10">
+	<Thought title="Hello" message="How you doin How you doin How you doin " createdOn={new Date()} />
+</div>
+
+<style>
+</style>
