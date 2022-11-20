@@ -14,8 +14,8 @@
 </script>
 
 <div class="flex flex-row columns-3">
-	<div class="md:w-full xs:w-0" />
-	<div class="w-full flex flex-col mt-2 py-5 px-5">
+	<div class="md:w-1/4 xs:w-0" />
+	<div class="w-full md:w-1/2 flex flex-col mt-2 py-5 px-5">
 		<div class="mb-10">
 			<a href="/" class="href">
 				<p class="text-lg text-slate-600 justify-center">
@@ -25,5 +25,5 @@
 		</div>
 		<slot />
 	</div>
-	<div class="md:w-full xs:w-0" />
+	<div class="md:w-1/4 xs:w-0" />
 </div>
