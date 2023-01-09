@@ -39,7 +39,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0-next.84",
 		"firebase": "^9.14.0",
-		"luxon": "^3.1.0",
+		"luxon": "^3.2.1",
 		"snarkdown": "^2.0.0",
 		"svelte-markdown": "^0.2.3"
 	}
